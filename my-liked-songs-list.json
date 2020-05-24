@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "added_at": "2020-05-22T17:47:24Z",
+      "track": {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/2YdVmtVBpIrv0N6WiBzSqm"
+              },
+              "id": "2YdVmtVBpIrv0N6WiBzSqm",
+              "name": "Atlantic Starr",
+              "type": "artist"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/1bVsvHBbgNEe7jwdkhNNzV"
+          },
+          "id": "1bVsvHBbgNEe7jwdkhNNzV",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27386fc44e8beeb52cb09144da5",
+              "width": 640
+            }
+          ],
+          "name": "Love Crazy",
+          "release_date": "1991-10-25",
+          "release_date_precision": "day",
+          "total_tracks": 11,
+          "type": "album"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2YdVmtVBpIrv0N6WiBzSqm"
+            },
+            "id": "2YdVmtVBpIrv0N6WiBzSqm",
+            "name": "Atlantic Starr",
+            "type": "artist",
+            "uri": "spotify:artist:2YdVmtVBpIrv0N6WiBzSqm"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/2sm3HfTCt3O6R6qUc5f6xb"
+        },
+        "id": "2sm3HfTCt3O6R6qUc5f6xb",
+        "name": "Masterpiece",
+        "type": "track"
+      }
+    }
+  ],
+  "limit": 1,
+  "next": "https://api.spotify.com/v1/me/tracks?offset=1&limit=1",
+  "offset": 0,
+  "previous": null,
+  "total": 503
+}

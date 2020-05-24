@@ -1,0 +1,36 @@
+# My Spotify Liked Songs App
+
+## Environment setup
+[x] Install database dependencies: mongoose
+[x] Install dependencies: axios, qs, spotify-web-api-node
+[x] Install dev dependencies: netlify-lambda nodemon dotenv http-proxy-middleware
+[] Git init
+[] Create src/functions folder
+[] Include functions folder and .env file in .gitignore
+[] Create netlify.toml file 
+
+### netlify.toml
+[] Add build command and point functions to the /functions folder
+[] Add redirect command to redirect /api/* to /.netlify/functions/:splat
+[] Add dev command to specify development port, command and publish folder
+
+## Database 
+[] Create MongoDB database on MongoDB Atlas
+[] Get connection string
+[] Insert the connection string into .env file as DB_URL
+
+## API
+[] Use netlify-cli to create get-latest-data function
+
+### update-data function
+[] Connect to database using mongoose and process.env.DB_URL
+[] Spotify Web API auth
+[] Fetch request from Spotify API with 50 limit and offset 0
+[] Push the fetched data into an array
+[] Continue fetching request from the API based on the "next" data until it becomes null and push the data into the array
+[] Then save the data into MongoDB database
+
+### get-data function
+[] Connect to database using mongoose and process.env.DB_URL
+[] Fetch data from database using mongoose
+[] Return data in JSON format
