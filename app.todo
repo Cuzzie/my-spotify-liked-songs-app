@@ -4,8 +4,9 @@
 [x] Install database dependencies: mongoose
 [x] Install dependencies: axios, qs, spotify-web-api-node
 [x] Install dev dependencies: netlify-lambda nodemon dotenv http-proxy-middleware
-[] Git init
-[] Create src/functions folder
+[x] Git init
+[x] Create /functions folder
+[] Add script in package.json to handle lambda build and lambda deploy
 [] Include functions folder and .env file in .gitignore
 [] Create netlify.toml file 
 
