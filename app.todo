@@ -6,32 +6,36 @@
 [x] Install dev dependencies: netlify-lambda nodemon dotenv http-proxy-middleware
 [x] Git init
 [x] Create /functions folder
-[] Add script in package.json to handle lambda build and lambda deploy
-[] Include functions folder and .env file in .gitignore
-[] Create netlify.toml file 
+[x] Add script in package.json to handle lambda build and lambda deploy
+[x] Include functions folder and .env file in .gitignore
+[x] Create netlify.toml file 
 
 ### netlify.toml
-[] Add build command and point functions to the /functions folder
+[x] Add build command and point functions to the /functions folder
 [] Add redirect command to redirect /api/* to /.netlify/functions/:splat
 [] Add dev command to specify development port, command and publish folder
 
 ## Database 
-[] Create MongoDB database on MongoDB Atlas
-[] Get connection string
-[] Insert the connection string into .env file as DB_URL
+[x] Create MongoDB database on MongoDB Atlas
+[x] Get connection string
+[x] Insert the connection string into .env file as DB_URL
 
 ## API
 [] Use netlify-cli to create get-latest-data function
 
-### update-data function
-[] Connect to database using mongoose and process.env.DB_URL
-[] Spotify Web API auth
+### auth function
+[] Create function to authorize client
+[] Create endpoint to retrieve the code from callback URL
+[] Use the code to get access token
+
+### update-data-db function
+[] Connect to database using mongoose and process.env.MONGO_URL
 [] Fetch request from Spotify API with 50 limit and offset 0
 [] Push the fetched data into an array
 [] Continue fetching request from the API based on the "next" data until it becomes null and push the data into the array
 [] Then save the data into MongoDB database
 
-### get-data function
-[] Connect to database using mongoose and process.env.DB_URL
+### list-data function
+[] Connect to database using mongoose and process.env.MONGO_URL
 [] Fetch data from database using mongoose
 [] Return data in JSON format
