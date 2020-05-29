@@ -20,13 +20,15 @@
 [x] Get connection string
 [x] Insert the connection string into .env file as DB_URL
 
+## Backend
+### my-spotify-liked-songs-backend
+[x] Create an express app that is only available locally to get liked songs from Spotify Web API and save them into the database
+[x] Install dependencies: express, axios, qs, nodemon, helmet, dotenv
+[x] Create function to authorize client
+[x] Use the code to get access token
+
 ## API
 [] Use netlify-cli to create get-latest-data function
-
-### auth function
-[] Create function to authorize client
-[] Create endpoint to retrieve the code from callback URL
-[] Use the code to get access token
 
 ### update-data-db function
 [] Connect to database using mongoose and process.env.MONGO_URL
