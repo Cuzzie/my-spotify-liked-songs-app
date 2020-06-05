@@ -26,6 +26,7 @@
 [x] Install dependencies: express, axios, qs, nodemon, helmet, dotenv
 [x] Create function to authorize client
 [x] Use the code to get access token
+[x] Refactor codes into a utils file
 
 ## API
 [] Use netlify-cli to create get-latest-data function
@@ -33,7 +34,8 @@
 ### update-data-db function
 [] Connect to database using mongoose and process.env.MONGO_URL
 [] Fetch request from Spotify API with 50 limit and offset 0
-[] Push the fetched data into an array
+[] Parse the data to filter off unnecessary data
+[] Push the data into an array
 [] Continue fetching request from the API based on the "next" data until it becomes null and push the data into the array
 [] Then save the data into MongoDB database
 
