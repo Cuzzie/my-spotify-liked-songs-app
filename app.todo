@@ -29,17 +29,27 @@
 [x] Refactor codes into a utils file
 
 ## API
-[] Use netlify-cli to create get-latest-data function
+[] Use netlify-cli to create get-data function
 
 ### update-data-db function
-[] Connect to database using mongoose and process.env.MONGO_URL
-[] Fetch request from Spotify API with 50 limit and offset 0
-[] Parse the data to filter off unnecessary data
-[] Push the data into an array
-[] Continue fetching request from the API based on the "next" data until it becomes null and push the data into the array
-[] Then save the data into MongoDB database
+[x] Connect to database using MongoClient and process.env.DB_URL
+[x] Fetch request from Spotify API with 50 limit and offset 0
+[x] Parse the data to filter off unnecessary data
+[x] Push the data into an array
+[x] Continue fetching request from the API based on the "next" data until it becomes null and push the data into the array
+[x] Then save the data into MongoDB database
 
-### list-data function
+### get-data function
 [] Connect to database using mongoose and process.env.MONGO_URL
 [] Fetch data from database using mongoose
 [] Return data in JSON format
+
+## Frontend
+
+### UI
+[] Background color similar to Spotify's color scheme
+[] Make body centralized and with a fixed width
+[] Title header
+[] A search bar to search for song title
+[] A text to show total number of songs 
+[] A card component to show song name, artist name, album name, album image, and song duration
