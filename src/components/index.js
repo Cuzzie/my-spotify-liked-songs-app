@@ -9,7 +9,7 @@ export const Main = styled.div`
 export const Title = styled.div`
   font-size: 5rem;
   text-align: left;
-  padding: 5rem;
+  padding: 3rem 5rem;
 `
 
 export const Button = styled.button`
@@ -17,3 +17,5 @@ export const Button = styled.button`
   padding: 1.5rem;
   color: #;
 `
+
+export { default as SearchBar } from "./SearchBar"
